@@ -4,8 +4,8 @@ This project is launched for Unilab-2021.
 
 ### datasets
 This directory consists of human images and some images which are compared with human.  
-- `animal_face_datset` consists of some animal images which are collected some open source dataset.
-- `human_face_datset` consists of some human images.
+- `animal_face_dataset` consists of some animal images which are collected some open source dataset.
+- `human_face_dataset` consists of some human images.
 - `mnist` consists of some code to install mnist dataset.
 
 If you want to add new images, you should summarize new directory which is named newly.
@@ -34,6 +34,6 @@ Finally, you use `resize_segmented_images` function for to resize segment_images
 - If you want to check resized images, you use `demonstration` function.  
 - If you want to rename image files, you use `rename_image_file` function. However, you must not run twice in a row because some image files are overwritten by the other image files.  
 
-### adda
+### [adda](https://github.com/ak0592/human-face-compare/tree/master/adda)
 This directory is for training adversarial domain adaptation model.  
 You can train model without gpu in the default condition, and you should edit code if you want to train with large dataset.  
