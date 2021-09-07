@@ -1,3 +1,9 @@
+# user-custom
+.DS_Store
+/segment_images/*
+/opencv-4.5.2/*
+datasets/animal_face_dataset/original/*
+datasets/human_dataset/original/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
