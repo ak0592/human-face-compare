@@ -6,6 +6,7 @@ This project is launched for Unilab-2021.
 This directory consists of human images and some images which are compared with human.  
 - `animal_face_datset` consists of some animal images which are collected some open source dataset.
 - `human_face_datset` consists of some human images.
+- `mnist` consists of some code to install mnist dataset.
 
 If you want to add new images, you should summarize new directory which is named newly.
 
