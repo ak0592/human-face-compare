@@ -33,3 +33,7 @@ After that, User should check images which are cut out correctly and organize `s
 Finally, you use `resize_segmented_images` function for to resize segment_images.  
 - If you want to check resized images, you use `demonstration` function.  
 - If you want to rename image files, you use `rename_image_file` function. However, you must not run twice in a row because some image files are overwritten by the other image files.  
+
+### adda
+This directory is for training adversarial domain adaptation model.  
+You can train model without gpu in the default condition, and you should edit code if you want to train with large dataset.  

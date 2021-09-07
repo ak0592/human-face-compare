@@ -7,7 +7,9 @@ import torch
 import torch.backends.cudnn as cudnn
 import params
 
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+CURRENT_PATH = os.getcwd()
+DATASET_PATH = '/'.join(CURRENT_PATH.split('/')[:-1])
+sys.path.append(DATASET_PATH)
 
 from torch.autograd import Variable
 from datasets.mnist import get_mnist, get_usps

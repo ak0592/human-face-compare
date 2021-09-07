@@ -1,12 +1,18 @@
 import torch
+import os
 import torchvision.utils
+import params
+
 from torch.utils.data import DataLoader, Dataset, random_split
 from torchvision import transforms
 from torchvision.datasets import ImageFolder
 from utils import make_variable
 from utils import get_data_loader, init_model, init_random_seed
 from models import Discriminator, LeNetClassifier, LeNetEncoder
-import params
+
+
+CURRENT_PATH = os.getcwd()
+DATASET_PATH = '/'.join(CURRENT_PATH.split('/')[:-1])
 
 
 def eval_target(encoder, classifier, data_loader):
@@ -39,7 +45,7 @@ tgt_encoder = init_model(net=LeNetEncoder(),
 transform = transforms.Compose(
     [transforms.Grayscale(num_output_channels=1), transforms.Resize((100, 100)), transforms.ToTensor(),
      transforms.Normalize(mean=(0.5,), std=(0.5,))])
-tgt_dataset = ImageFolder("datasets2/human_dataset/resized", transform)  # ここは適当にラベル付きのデータを用意する
+tgt_dataset = ImageFolder("datasets/human_dataset/resized", transform)  # ここは適当にラベル付きのデータを用意する
 
 train_ratio = 0.8
 tgt_train_size = int(train_ratio * len(tgt_dataset))
