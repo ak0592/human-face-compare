@@ -22,15 +22,15 @@ In this experiment, I use three types of network. They are very simple.
   ```
   LeNetEncoder (
     (encoder): Sequential (
-      (0): Conv2d(1, 20, kernel_size=(5, 5), stride=(1, 1))
+      (0): Conv2d(1, 20, kernel_size=(4, 4), stride=(2, 2))
       (1): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
       (2): ReLU ()
-      (3): Conv2d(20, 50, kernel_size=(5, 5), stride=(1, 1))
+      (3): Conv2d(20, 50, kernel_size=(4, 4), stride=(2, 2))
       (4): Dropout2d (p=0.5)
       (5): MaxPool2d (size=(2, 2), stride=(2, 2), dilation=(1, 1))
       (6): ReLU ()
     )
-    (fc1): Linear (800 -> 500)
+    (fc1): Linear (1250 -> 500)
   )
   ```
 
@@ -38,7 +38,7 @@ In this experiment, I use three types of network. They are very simple.
 
   ```
   LeNetClassifier (
-    (fc2): Linear (500 -> 10)
+    (fc2): Linear (500 -> 4)
   )
   ```
 
