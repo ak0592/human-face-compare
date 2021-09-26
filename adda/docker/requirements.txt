@@ -1,0 +1,14 @@
+flake8==3.8.3
+jupyterlab==2.2.8
+kaleido==0.2.1
+numpy==1.19.2
+pandas==1.1.2
+plotly==4.10.0
+pytest==6.0.2
+scipy==1.5.2
+yacs==0.1.8
+opencv-python==4.5.1.48
+sympy==1.7.1
+torch
+torchvision
+

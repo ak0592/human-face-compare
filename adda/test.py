@@ -18,23 +18,21 @@ import os
 def eval_target(encoder, classifier, data_loader):   
     for (images, labels) in data_loader:
         images = make_variable(images, volatile=True)
+
         preds = classifier(encoder(images))
         preds = torch.nn.functional.softmax(preds)
-        #print(preds)
         preds = preds.to('cpu').detach().numpy().copy()[0]
         preds_idx = np.argmax(preds)
         preds_sort = preds.argsort()
         preds_first_idx = preds_sort[-1]
-        preds_second_idx = preds_sort[-2]
-        preds_third_idx = preds_sort[-3]
         
         pred_animal = classes[preds_first_idx]
         print("\n\nPrediction")
         print('\nFirst : ', pred_animal)
         display_png(Image("show_image/"+pred_animal+".png"))
-        #img = Image.open("datasets2/show_image/"+pred_animal+".png")
+        #img = Image.open("show_image/"+pred_animal+".png")
         #img.show()
-        #os.remove(test_file)
+        os.remove(test_file)
 
 
 classes = ['cat', 'fox', 'gorilla', 'raccoon']
