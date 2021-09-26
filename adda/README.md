@@ -1,6 +1,7 @@
 # PyTorch-ADDA
 A PyTorch implementation for [Adversarial Discriminative Domain Adaptation](https://arxiv.org/abs/1702.05464).
 
+Implementation reference : [pytorch-adda](https://github.com/corenel/pytorch-adda)
 ## Environment
 - Python 3.6
 - PyTorch 0.2.0
