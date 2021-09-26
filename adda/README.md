@@ -4,13 +4,33 @@ A PyTorch implementation for [Adversarial Discriminative Domain Adaptation](http
 ## Environment
 - Python 3.6
 - PyTorch 0.2.0
+- Ubuntu 18.04
 
+or
+- google colaboratory
+## Installation Steps
+1.clone
+```
+$ git clone https://github.com/ak0592/human-face-compare.git
+```
+2.environment setup
+```
+$ cd human-face-compare/adda
+$ cp docker/.env.sh docker/env.sh
+$ sh docker/build.sh
+$ sh docker/run.sh
+$ sh docker/exec.sh
+```
+3.start jupyter
+```
+$ sh jupyter_run.sh
+```
 ## Usage
 
-I only test on MNIST -> USPS, you can just run the following command:
+You can use command:
 
 ```shell
-python3 main.py
+$ python3 test.py
 ```
 
 ## Network
