@@ -1,5 +1,5 @@
 flake8==3.8.3
-jupyterlab==2.2.8
+jupyterlab==2.2.10
 kaleido==0.2.1
 numpy==1.19.2
 pandas==1.1.2

@@ -3,8 +3,8 @@ import os
 
 
 # dataset path
-HUMAN_DATASET_PATH = 'datasets/human_dataset'
-ANIMAL_DATASET_PATH = 'datasets/animal_face_dataset'
+HUMAN_DATASET_PATH = 'adda/datasets/human_dataset'
+ANIMAL_DATASET_PATH = 'adda/datasets/animal_face_dataset'
 # cascade path in opencv
 OPENCV_PATH = 'opencv-4.5.2'
 FACE_CASCADE_PATH = f'{OPENCV_PATH}/data/haarcascades/haarcascade_frontalface_default.xml'
