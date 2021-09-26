@@ -27,13 +27,14 @@ $ sh docker/exec.sh
 $ sh jupyter_run.sh
 ```
 ## Usage
+1.Put **one** image you want to test in testdata/test
 
-You can use command:
+2.Use command:
 
 ```shell
 $ python3 test.py
 ```
-
+3. Delete the test image automatically．
 ## Network
 
 In this experiment, I use three types of network. They are very simple.
