@@ -10,11 +10,11 @@ Implementation reference : [pytorch-adda](https://github.com/corenel/pytorch-add
 or
 - google colaboratory
 ## Installation Steps
-1.clone
+1. clone
 ```
 $ git clone https://github.com/ak0592/human-face-compare.git
 ```
-2.environment setup
+2. environment setup
 ```
 $ cd human-face-compare/adda
 $ cp docker/.env.sh docker/env.sh
@@ -22,14 +22,14 @@ $ sh docker/build.sh
 $ sh docker/run.sh
 $ sh docker/exec.sh
 ```
-3.start jupyter
+3. start jupyter
 ```
 $ sh jupyter_run.sh
 ```
 ## Usage
-1.Put **one** image you want to test in testdata/test
+1. Put **one** image you want to test in testdata/test
 
-2.Use command:
+2. Use command:
 
 ```shell
 $ python3 test.py
