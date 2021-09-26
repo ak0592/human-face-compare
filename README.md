@@ -8,10 +8,11 @@ This directory consists of human images and some images which are compared with 
 - `human_face_dataset` consists of some human images.
 - `mnist` consists of some code to install mnist dataset.
 
-If you want to add new images, you should summarize new directory which is named newly.
+If you want to add new images, you should summarize new directory which is named newly.  
+Since this project can be applied to objects other than animals, it is possible to create a diagnostic device that compares a human face with various objects.  
 
 ### OpenCV
-You need OpenCV to cut off images, and you can install it from [here](https://github.com/opencv/opencv/releases). (Any version is fine.)       
+You need OpenCV to cut off images, and you can install it from [here](https://github.com/opencv/opencv/releases). (Any version is fine, and we use version-4.5.2.)    
 We use human face detect cascade and cat face detect cascade.  
 The accuracy of cascades is not perfect, but we will use these in consideration of work efficiency.  
 Also, in animal case, we have only the cascade for cat face segmentation, but use this to cut out other animal images.
@@ -20,7 +21,7 @@ Also, in animal case, we have only the cascade for cat face segmentation, but us
 This code is for to create face dataset.  
 Before run this code, you need to make `original` directory in dataset directory and put the image you want to process here.  
 ```
-dataset
+adda/dataset
  |-- animal_face_dataset  
  |            |-- original <-- here
  |
